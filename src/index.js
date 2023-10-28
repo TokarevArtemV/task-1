@@ -16,5 +16,9 @@
  */
 import { refs } from './js/refs';
 import { submitForm } from './js/submitForm';
+import {renderNotes} from './js/renderNotes'
 
 refs.taskFormEl.addEventListener('submit', submitForm);
+
+
+renderNotes()
