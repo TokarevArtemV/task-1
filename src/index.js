@@ -16,9 +16,10 @@
  */
 import { refs } from './js/refs';
 import { submitForm } from './js/submitForm';
-import {renderNotes} from './js/renderNotes'
+import { renderNotes } from './js/renderNotes';
+import { deleteNoteFromLocalStg } from './js/deleteNotefromLocalStg';
 
 refs.taskFormEl.addEventListener('submit', submitForm);
+refs.listEl.addEventListener('click', deleteNoteFromLocalStg);
 
-
-renderNotes()
+renderNotes();

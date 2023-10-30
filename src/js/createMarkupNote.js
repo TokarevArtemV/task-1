@@ -1,6 +1,6 @@
-export function createMarkupNote(newNote) {
+export function createMarkupNote({ taskName, taskText, id }) {
   return `<li class="task-list-item">
-       <button class="task-list-item-btn">Удалить</button> <h3>${newNote.taskName}</h3>
-      <p>${newNote.taskText}</p>
+       <button class="task-list-item-btn" id=${id}>Удалить</button> <h3>${taskName}</h3>
+      <p>${taskText}</p>
     </li>`;
 }

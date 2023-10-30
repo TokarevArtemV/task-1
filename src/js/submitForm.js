@@ -9,4 +9,5 @@ export function submitForm(evt) {
   addNote(newNote);
   const markup = createMarkupNote(newNote);
   refs.listEl.insertAdjacentHTML('beforeend', markup);
+  evt.target.reset()
 }
